@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Rivera | AI & Full Stack Engineer — Gemini Chatbot Demo</title>
+  <link rel="stylesheet" href="/styles.css">
+  <!-- 1. Include the Chatbot Widget CSS -->
+  <link rel="stylesheet" href="/widget/chat-widget.css">
+</head>
+<body>
+  <div class="bg-glow-1"></div>
+
+  <!-- Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-badge">⚡</span>
+        <span>Alex Rivera</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#blog">Articles</a></li>
+        <li><a href="#playground">API Playground</a></li>
+        <li><a href="/api/health" target="_blank">API Health</a></li>
+        <li>
+          <button class="btn-nav" onclick="document.querySelector('.cw-launcher-button').click()">
+            <span>💬 Ask AI Assistant</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="badge-pill">
+        <span class="pulse-dot"></span>
+        Google Gemini 2.5 Flash Integrated
+      </div>
+      <h1>Architecting Intelligent<br>Full-Stack Systems</h1>
+      <p class="hero-subtitle">
+        Senior Engineer specializing in scalable Node.js microservices, real-time distributed pipelines, and generative AI integration.
+      </p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" onclick="document.querySelector('.cw-launcher-button').click()">
+          <span>Try AI Chatbot Widget (Bottom Right)</span>
+          <span>✨</span>
+        </button>
+        <a href="#playground" class="btn btn-secondary">
+          <span>Test REST API Live</span>
+          <span>→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Chat Widget Add-on Showcase Banner -->
+    <section class="spotlight-card">
+      <div class="spotlight-header">
+        <h2>
+          <span>🧩</span>
+          <span>Embeddable Chatbot Add-on Widget</span>
+        </h2>
+        <span class="badge-pill" style="margin-bottom:0">Zero Dependencies • 2 Lines of Code</span>
+      </div>
+      <p style="color: var(--text-secondary); margin-bottom: 16px;">
+        This portfolio demonstrates the Gemini Chatbot integrated as a drop-in add-on feature. You can add this floating assistant to any website (portfolio, blog, e-commerce, documentation) with two simple tags:
+      </p>
+      <div class="code-snippet">
+&lt;!-- 1. Include the Widget Stylesheet --&gt;
+&lt;link rel="stylesheet" href="http://localhost:3000/widget/chat-widget.css"&gt;
+
+&lt;!-- 2. Include the Widget Script before closing &lt;/body&gt; --&gt;
+&lt;script src="http://localhost:3000/widget/chat-widget.js"&gt;&lt;/script&gt;
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="projects" class="section">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-desc">Selected work highlighting backend architecture and AI workflows.</p>
+
+      <div class="cards-grid">
+        <div class="card">
+          <span class="card-tag">Gemini API • Node.js</span>
+          <h3>Gemini Chatbot REST Gateway</h3>
+          <p>
+            An enterprise-grade Express.js REST gateway communicating with Google AI Studio's Gemini models. Features timeout handling, graceful fallback, and custom prompt streaming.
+          </p>
+          <div class="card-footer">
+            <span>Production Ready</span>
+            <span style="color:#93c5fd">Active Demo ⚡</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-tag">TypeScript • Vector DB</span>
+          <h3>OmniSearch AI Engine</h3>
+          <p>
+            Sub-millisecond semantic search indexing 500,000+ technical articles with hybrid vector similarity and BM25 ranking.
+          </p>
+          <div class="card-footer">
+            <span>Distributed System</span>
+            <span>99.98% Uptime</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-tag">Go • Kafka • Redis</span>
+          <h3>CloudPulse Stream Processor</h3>
+          <p>
+            High-throughput event streaming engine handling 250k events/sec across multi-region Kubernetes clusters with automated health rebalancing.
+          </p>
+          <div class="card-footer">
+            <span>Cloud Native</span>
+            <span>Open Source</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Blog Articles -->
+    <section id="blog" class="section">
+      <h2 class="section-title">Latest Engineering Articles</h2>
+      <p class="section-desc">In-depth guides on API design, prompt engineering, and LLM reliability.</p>
+
+      <div class="cards-grid">
+        <div class="card">
+          <span class="card-tag">Guide</span>
+          <h3>Reliable LLM Integrations: Timeouts, Fallbacks & Error States</h3>
+          <p>
+            Strategies for handling upstream timeouts, quota exhaustion, and safety filters gracefully in production Node.js services.
+          </p>
+          <div class="card-footer">
+            <span>5 min read</span>
+            <span>API Reliability</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-tag">Performance</span>
+          <h3>Low-Latency AI Responses with Gemini 2.5 Flash</h3>
+          <p>
+            Benchmarking time-to-first-token and throughput across modern generative AI models for real-time customer chatbots.
+          </p>
+          <div class="card-footer">
+            <span>8 min read</span>
+            <span>Benchmark</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="card-tag">Frontend</span>
+          <h3>Designing Modular Embeddable Widgets with Vanilla JS</h3>
+          <p>
+            How to build zero-dependency chat widgets that cleanly isolate styles, preserve context, and mount onto any web project.
+          </p>
+          <div class="card-footer">
+            <span>6 min read</span>
+            <span>Design Patterns</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive REST API Playground -->
+    <section id="playground" class="playground-section">
+      <h2 class="section-title" style="margin-bottom: 8px;">Direct REST API Playground</h2>
+      <p style="color: var(--text-secondary);">
+        Test your <code>POST /api/chat</code> endpoint directly from the browser to inspect raw JSON request & response payloads.
+      </p>
+
+      <div class="playground-grid">
+        <div class="playground-panel">
+          <label for="promptInput">
+            <span>User Prompt</span>
+            <span style="font-size:0.75rem; color:#9ca3af;">JSON body: { "prompt": "..." }</span>
+          </label>
+          <textarea id="promptInput" class="playground-textarea" placeholder="Type a prompt to send to /api/chat...">Explain how quantum computing differs from classical computing in two concise bullet points.</textarea>
+          
+          <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+            <button id="sendBtn" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">
+              <span>Send Request to /api/chat</span>
+            </button>
+            <button id="emptyTestBtn" class="btn btn-secondary" style="padding: 10px 16px; font-size: 0.9rem;">
+              <span>Test Empty (Expect 400)</span>
+            </button>
+            <span id="loadingStatus" style="font-size: 0.85rem; color: #9ca3af; display: none;">Sending...</span>
+          </div>
+        </div>
+
+        <div class="playground-panel">
+          <label>
+            <span>Raw JSON Response</span>
+            <span id="statusBadge" style="font-size:0.75rem; color:#10b981;">Ready</span>
+          </label>
+          <pre id="jsonOutput" class="playground-output">// Click 'Send Request' to view raw API JSON response here...</pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>
+        AI Chatbot Integration Showcase • Built with Node.js, Express & Google Gemini API
+      </p>
+      <p style="margin-top: 8px; font-size: 0.8rem;">
+        Get your free API key at <a href="https://aistudio.google.com/app/apikey" target="_blank">Google AI Studio</a> • Tested with Postman
+      </p>
+    </div>
+  </footer>
+
+  <!-- Playground Script -->
+  <script>
+    const promptInput = document.getElementById('promptInput');
+    const sendBtn = document.getElementById('sendBtn');
+    const emptyTestBtn = document.getElementById('emptyTestBtn');
+    const jsonOutput = document.getElementById('jsonOutput');
+    const statusBadge = document.getElementById('statusBadge');
+    const loadingStatus = document.getElementById('loadingStatus');
+
+    async function testEndpoint(promptValue) {
+      loadingStatus.style.display = 'inline';
+      statusBadge.textContent = 'Executing...';
+      statusBadge.style.color = '#38bdf8';
+      jsonOutput.textContent = '// Sending request to POST /api/chat ...';
+
+      const startTime = performance.now();
+      try {
+        const res = await fetch('/api/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ prompt: promptValue })
+        });
+        const duration = Math.round(performance.now() - startTime);
+        const data = await res.json();
+
+        statusBadge.textContent = `HTTP ${res.status} (${duration}ms)`;
+        statusBadge.style.color = res.ok ? '#10b981' : '#ef4444';
+        jsonOutput.textContent = JSON.stringify(data, null, 2);
+      } catch (err) {
+        statusBadge.textContent = 'Network Error';
+        statusBadge.style.color = '#ef4444';
+        jsonOutput.textContent = JSON.stringify({ error: err.message }, null, 2);
+      } finally {
+        loadingStatus.style.display = 'none';
+      }
+    }
+
+    sendBtn.addEventListener('click', () => {
+      testEndpoint(promptInput.value);
+    });
+
+    emptyTestBtn.addEventListener('click', () => {
+      testEndpoint('');
+    });
+  </script>
+
+  <!-- 2. Include the Embeddable Chat Widget Script -->
+  <script src="/widget/chat-widget.js"></script>
+</body>
+</html>
