@@ -1,4 +1,4 @@
-# 🚀 Google Gemini AI Chatbot Integration
+# Google Gemini AI Chatbot Integration
 
 A complete, production-ready **Node.js & Express.js REST API** integrated with the **Google Gemini API** (`gemini-2.5-flash`), paired with a modular, embeddable **Chatbot Widget** designed to drop into any portfolio, blog, or web application.
 
@@ -17,7 +17,7 @@ A complete, production-ready **Node.js & Express.js REST API** integrated with t
 
 ---
 
-## ✨ Key Features
+## Key Features
 
 - **Express.js REST API**: Clean route architecture with controllers, services, and middlewares.
 - **Google Gen AI Integration**: Supports `gemini-2.5-flash` with fallback, single-turn prompts, multi-turn conversation context, and custom system instructions.
@@ -33,7 +33,7 @@ A complete, production-ready **Node.js & Express.js REST API** integrated with t
 
 ---
 
-## 🔑 Step-by-Step: Obtain a Free Google Gemini API Key
+## Step-by-Step: Obtain a Free Google Gemini API Key
 
 Google AI Studio provides a free tier for developers with no credit card required to get started.
 
@@ -49,7 +49,7 @@ Google AI Studio provides a free tier for developers with no credit card require
 
 ---
 
-## ⚡ Quick Start & Installation
+##  Quick Start & Installation
 
 ### 1. Clone or Open the Workspace
 Ensure you have **Node.js (v18+)** installed.
@@ -89,7 +89,7 @@ GEMINI_TIMEOUT_MS=25000
 
 ---
 
-## 🏗️ Project Architecture
+## Project Architecture
 
 ```
 AI chatbot intergration/
@@ -199,7 +199,7 @@ curl -X POST http://localhost:3000/api/chat \
 
 ---
 
-## 🛡️ Error Handling & Reliability
+## Error Handling & Reliability
 
 Every error response follows a uniform JSON structure:
 
@@ -227,7 +227,7 @@ Every error response follows a uniform JSON structure:
 
 ---
 
-## 🧪 Testing with Postman
+## Testing with Postman
 
 An exported Postman Collection v2.1 is located at [`gemini-chatbot.postman_collection.json`](./gemini-chatbot.postman_collection.json).
 
@@ -247,7 +247,7 @@ An exported Postman Collection v2.1 is located at [`gemini-chatbot.postman_colle
 
 ---
 
-## 🧩 Embedding the Chat Widget into Any Web Project
+## Embedding the Chat Widget into Any Web Project
 
 The chat widget is modular, zero-dependency, and isolated. You can add it to **any** website (such as an existing portfolio, blog, or documentation site) with 2 lines:
 
@@ -283,7 +283,7 @@ You can customize the widget behavior by declaring `window.ChatbotWidgetConfig` 
 
 ---
 
-## 🤖 Automated Test Suite
+## Automated Test Suite
 
 To verify all endpoints, validation logic, static file serving, and error responses automatically:
 
@@ -316,5 +316,5 @@ Expected output:
 
 ---
 
-## 📜 License
+##  License
 MIT License. Free to use in your personal or commercial web projects!
